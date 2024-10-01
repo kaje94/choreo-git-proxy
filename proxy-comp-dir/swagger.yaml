@@ -40,7 +40,7 @@ tags:
 paths:
   /user/{username}:
     get:
-      deprecated: true
+      deprecated: false
       tags:
         - user
       summary: Get user by user name
@@ -71,7 +71,7 @@ paths:
           description: User not found
   /user:
     post:
-      deprecated: true
+      deprecated: false
       tags:
         - user
       summary: Create user
