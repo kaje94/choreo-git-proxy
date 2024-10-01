@@ -95,6 +95,7 @@ paths:
                 $ref: "#/components/schemas/User"
   /pet:
     put:
+      deprecated: true
       tags:
         - pet
       summary: Update an existing pet
