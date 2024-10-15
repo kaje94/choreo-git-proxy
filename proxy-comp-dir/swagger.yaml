@@ -28,21 +28,16 @@ tags:
 paths:
   /user/{username}:
     get:
-      deprecated: true
-      tags:
-        - user
       summary: Get user by user name
       description: ''
-      operationId: getUserByName
       parameters:
         - name: username
           in: path
-          description: 'The name that needs to be fetched. Use user1 for testing. '
           required: true
-          style: simple
-          explode: false
           schema:
-            type: string
+            type: array
+            items:
+              type: string
       responses:
         '200':
           description: successful operation
